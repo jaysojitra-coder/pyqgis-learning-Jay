@@ -16,10 +16,8 @@ This document contains the introduction notes for what we will be learning in Py
 ## Software and Tools Used
 
 - **QGIS Version:** 3.34 (Firenze)  
-  QGIS is a free and open-source GIS software.
-
-  Official download link:  
-  https://qgis.org/en/site/forusers/download.html
+  QGIS is a free and open-source GIS software.  
+  Official download link: https://qgis.org/en/site/forusers/download.html
 
 - **Python Console (QGIS):**  
   Used to write and execute PyQGIS code directly inside QGIS.
