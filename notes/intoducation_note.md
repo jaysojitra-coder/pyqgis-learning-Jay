@@ -1,50 +1,80 @@
-**DAY 1: Introduction to PyQGIS**
+# DAY 1: Introduction to PyQGIS
 
 ---
-I am very exited to learn and also understand new concepts in programming in PyQGIS.
 
-I used the free channel of YouTube "Spatial Thoughts" to learn the basic of PyQGIS.
-LINK: https://youtu.be/-nJ_8Ph_yPE?list=PLppGmFLhQ1HJVTn0yBvHNXJaO7oG6T-d1
+I am very excited to learn and understand new concepts in programming using PyQGIS.
 
-This is the Introduction note for the what we are lerning in PyQGIS.
----
+I am using the free YouTube channel **Spatial Thoughts** to learn the basics of PyQGIS.
 
-*software and tools used*
+**Video Link:**  
+https://youtu.be/-nJ_8Ph_yPE?list=PLppGmFLhQ1HJVTn0yBvHNXJaO7oG6T-d1
 
-WE are uisng a a QGIS software version 3.34-Firenze. This is free and open source software.
-We can download it from the official QGIS website https://qgis.org/en/site/forusers/download.html
-We are using the Python Console in QGIS to write and execute our PyQGIS code.
-
-we also usded the vs code editor to write our PyQGIS code. We need to install the QGIS plugin in vs code to run PyQGIS code in vs code editor.
+This document contains the introduction notes for what we will be learning in PyQGIS.
 
 ---
-*What is PyQGIS ?*
-PyQGIS is a Python library that allows us to use Python programming language to interact with Q
 
-what can you used python in QGIS for ?
---> issue commands from python Console
---> automate tasks
---> write a custom functions ( later )
---> write plugins
---> data processing
---> custom standalone applications ( create own tool bar) 
---> create a new applications ( Not cover --later )
+## Software and Tools Used
 
-1. Basic PyQGIS
---> Classes and Objects
---> Using Pyqgis Classes
---> GUI Programming Basics
+- **QGIS Version:** 3.34 (Firenze)  
+  QGIS is a free and open-source GIS software.
 
-2. PyQGIS Scripting 
---> QGIS Interface and Project API 
---> Running python Scripts on Startup
---> Running Processing Algorithms
+  Official download link:  
+  https://qgis.org/en/site/forusers/download.html
 
-3. plugin
---> Building your First Plugin
---> Processing API and Processing Plugins 
+- **Python Console (QGIS):**  
+  Used to write and execute PyQGIS code directly inside QGIS.
 
-4. Actions and Standalone Scripts 
---> QGIS Actions
---> Writing Standalone PyQGIS Scripts
---> Q & A
+- **VS Code (Optional):**  
+  Used as an external code editor for writing PyQGIS scripts.  
+  To run PyQGIS code in VS Code, the QGIS Python environment and related extensions need to be configured.
+
+---
+
+## What is PyQGIS?
+
+**PyQGIS** is a Python library that allows developers to use the Python programming language to interact with QGIS. It provides access to QGIS core functionality, data layers, map rendering, and geoprocessing tools.
+
+---
+
+## 1. What Can You Use Python for in QGIS?
+
+- Issue commands from the **Python Console**
+- Automate repetitive GIS tasks
+- Write custom functions
+- Develop QGIS plugins
+- Perform data processing and analysis
+- Build custom standalone applications (e.g., custom toolbars)
+- Create new applications (not covered in this course)
+
+---
+
+## 2. Basic PyQGIS Concepts
+
+- Classes and Objects
+- Using PyQGIS Classes
+- GUI Programming Basics
+
+---
+
+## 3. PyQGIS Scripting
+
+- QGIS Interface and Project API
+- Running Python Scripts on Startup
+- Running Processing Algorithms
+
+---
+
+## 4. Plugins
+
+- Building Your First Plugin
+- Processing API and Processing Plugins
+
+---
+
+## 5. Actions and Standalone Scripts
+
+- QGIS Actions
+- Writing Standalone PyQGIS Scripts
+- Q&A
+
+---
