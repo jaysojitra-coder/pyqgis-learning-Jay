@@ -21,7 +21,8 @@ we also usded the vs code editor to write our PyQGIS code. We need to install th
 *What is PyQGIS ?*
 PyQGIS is a Python library that allows us to use Python programming language to interact with Q
 
-what can you used python in QGIS for ?
+1.what can you used python in QGIS for ?
+
 --> issue commands from python Console
 --> automate tasks
 --> write a custom functions ( later )
@@ -30,21 +31,25 @@ what can you used python in QGIS for ?
 --> custom standalone applications ( create own tool bar) 
 --> create a new applications ( Not cover --later )
 
-1. Basic PyQGIS
+2. Basic PyQGIS
+
 --> Classes and Objects
 --> Using Pyqgis Classes
 --> GUI Programming Basics
 
-2. PyQGIS Scripting 
+3. PyQGIS Scripting
+
 --> QGIS Interface and Project API 
 --> Running python Scripts on Startup
 --> Running Processing Algorithms
 
-3. plugin
+5. plugin
+
 --> Building your First Plugin
 --> Processing API and Processing Plugins 
 
-4. Actions and Standalone Scripts 
+6. Actions and Standalone Scripts
+
 --> QGIS Actions
 --> Writing Standalone PyQGIS Scripts
 --> Q & A
