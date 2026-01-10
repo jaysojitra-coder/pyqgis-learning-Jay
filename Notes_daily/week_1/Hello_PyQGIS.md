@@ -2,59 +2,53 @@
 
 ### What is PyQGIS?
 
-* **PyQGIS** is the Python API for QGIS.
-* Almost everything you can do in QGIS GUI can be done using Python.
-* Used for **automation, custom tools, plugins, and batch GIS tasks**.
+**PyQGIS** is the Python API for QGIS.
+It allows you to control QGIS using Python instead of clicking buttons.
+
+With PyQGIS you can:
+
+* Automate GIS workflows
+* Edit layers programmatically
+* Create custom tools & plugins
+* Process large datasets faster
 
 ---
 
-### Task Example: Delete an Attribute Column Using Python
+### Requirements
 
-**Goal:** Delete the 2nd column (`SDE_SFGIS_`) from `shoreline.shp` using PyQGIS.
-
-> ⚠️ Make sure the `shoreline` layer is selected before running the script.
-
----
-
-### PyQGIS Code
-
-```python
-layer = iface.activeLayer()  # Select layer 
-layer.startEditing()         # start Editing (mean click the edit button)
-layer.deleteAttribute(1)     # Deledt the attribute by which index
-layer.commitChanges()        # Then do the cmmmit then change ( As Git )
-
-layer .rollback()      # rollback the Like Undo ( is not deleted uness you commit 
-```
+* **QGIS Version:** 3.40 LTR
+* Open QGIS → `Plugins → Python Console`
+* Click **Show Editor** to write code
 
 ---
 
-### Code Explained (One-Line Notes)
+### Reference Video 🎥
 
-* `iface.activeLayer()` → Gets the currently selected layer in QGIS
-* `startEditing()` → Puts the layer into edit mode
-* `deleteAttribute(1)` → Deletes the 2nd column (index starts at 0)
-* `commitChanges()` → Saves edits and exits edit mode
-
----
-
-### Alternative (With Confirmation Dialog)
-
-```python
-layer = iface.activeLayer()
-iface.vectorLayerTools().startEditing(layer)
-layer.deleteAttribute(1)
-iface.vectorLayerTools().stopEditing(layer)
-```
-
-* Uses **QgsVectorLayerTools**
-* Shows a **confirmation popup** before saving edits
+**Hello PyQGIS – Attribute Editing**
+YouTube: [https://youtu.be/7xNNpGoYK9Q](https://youtu.be/7xNNpGoYK9Q)
+Playlist: PLppGmFLhQ1HKKnk3riKNyOxb-3MTI-7zE
 
 ---
 
-### Key Takeaways
+### Example Task
 
-* PyQGIS allows **programmatic editing** of GIS data
-* Attribute indexes start from **0**
-* Always **start editing before changes** and **commit after**
-* Python = faster, repeatable GIS workflows 🚀
+Delete the **2nd attribute column** (`SDE_SFGIS_`) from a vector layer.
+
+⚠️ Make sure the layer is **selected** before running code.
+
+---
+
+### Important Notes
+
+* Attribute indexes start at **0**
+* You must **start editing** before making changes
+* Use `commitChanges()` to save
+* Use `rollback()` to cancel changes
+
+---
+
+### Key Takeaways ✅
+
+* PyQGIS can do everything the GUI can
+* Python makes GIS work repeatable and fast
+* Notes help you remember *why* code works
