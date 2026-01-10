@@ -19,10 +19,12 @@
 ### PyQGIS Code
 
 ```python
-layer = iface.activeLayer()
-layer.startEditing()
-layer.deleteAttribute(1)
-layer.commitChanges()
+layer = iface.activeLayer()  # Select layer 
+layer.startEditing()         # start Editing (mean click the edit button)
+layer.deleteAttribute(1)     # Deledt the attribute by which index
+layer.commitChanges()        # Then do the cmmmit then change ( As Git )
+
+layer .rollback()      # rollback the Like Undo ( is not deleted uness you commit 
 ```
 
 ---
