@@ -1,4 +1,5 @@
 ## 2. Hello PyQGIS 🐍🌍
+** Script Name: delete_attribute.py**
 
 ### What is PyQGIS?
 
