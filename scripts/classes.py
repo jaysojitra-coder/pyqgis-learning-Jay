@@ -68,4 +68,57 @@ Output:
 <class '__console__.Car'>        # This is the class
 <__console__.Car object at 0x...>  # This is an object (instance) of the class
 """
-# continued...
+
+# Attribute ( vlue )
+
+print(my_car1.color) 
+print(my_car1.model)
+
+'''
+output 
+Civic
+blue
+'''
+
+# Inheritance : Used the class you have and create a new class and but
+# with modify 
+
+# ---------- Inheritance ----------
+
+class Sedan(Car):
+    def __init__(self, color, car_type, seats):
+        super().__init__(color, car_type)
+        self.seats = seats
+
+
+class ElectricSedan(Sedan):
+    def __init__(self, color, car_type, seats, range_km):
+        super().__init__(color, car_type, seats)
+        self.range_km = range_km
+
+
+# Objects of child classes
+my_car = Sedan('blue', 'automatic', 5)
+print(my_car.color)
+print(my_car.seats)
+my_car.start()
+
+'''
+output
+blue
+5
+Car Started
+'''
+
+my_future_car = ElectricSedan('red', 'automatic', 5, 500)
+print(my_future_car.color)
+print(my_future_car.seats)
+print(my_future_car.range_km)
+my_future_car.start()
+
+'''
+output 
+5
+500
+Car Started
+'''
