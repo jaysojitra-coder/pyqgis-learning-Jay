@@ -45,3 +45,8 @@ distance_km = distance_meters / 1000
 # Output
 # ----------------------------------------------------
 print(f"Distance between San Francisco and New York: {distance_km:.2f} km")
+
+'''
+output:
+Distance between San Francisco and New York: 4145.45 km
+'''
